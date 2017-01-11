@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>point.css &ndash; unit-based layout classes.</title>
+  <style>
+    .demo-style{display: block;font-family: monospace;white-space: pre;margin-top: -1rem}
+    .ff-system-sans{font-family:-apple-system,BlinkMacSystemFont,sans-serif}
+    .fw-900{font-weight:900}
+    .fw-800{font-weight:800}
+    .mb_4 > * {margin-bottom:4rem}
+
+    .gc-margin{background-color:#f9cc9d}
+    .gc-padding{background-color:#c4d08b}
+    *{box-sizing:border-box}
+
+    .demo > *{background-color: white;border:1px dashed #303942}
+
+    .padding-demo{border:1px dashed #303942;background-color: #c4d08b}
+    .padding-demo > *{background-color: white}
+    .demo::before,.demo::after{content:"";display:table}
+    .m-0 {margin: 0}
+
+    .github-link{fill: #808080}
+    .github-link:hover{fill: #f0c}
+    .github-link:active{fill: #c0a}
+
+    code { font-size: 1.231em }
+
+    code { background-color: #e3e3e3; padding: .125rem .25rem; border-radius: .25rem }
+    pre code { background-color: transparent; }
+
+  </style>
+  <link rel="stylesheet" href="./packages/point.css/point.css" />
+</head>
+<body class="ff-system-sans mb_4" style="padding: 5vw 10vw; line-height: 1.5;">
+  <header>
+    <h1 class="fw-900">
+      point.css
+
+      <a href="https://github.com/chantastic/point.css" class="ml-1" style="vertical-align: middle">
+        <svg viewBox="0 0 16 16" class="s-3 github-link"><path d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+      </a>
+    </h1>
+    <p>Unit-based layout classes.</p>
+  </header>
+
+  <section id="what">
+    <h2 class="fw-800">What</h2>
+
+    <p>105 selectors for layout on a point grid.</p>
+    <p>A point grid is like graph paper. The gaps between dots are the smallest single unit of measurement.</p>
+    <p>In point.css, the gaps are <code>.5rem</code></p>
+  </section>
+
+  <section id="example">
+    <h2 class="fw-800">Example</h2>
+    <p>This is the <a href="http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/">media object</a> with all opinions about layout removed.</p>
+    <style class="demo-style">
+.media,
+.bd {overflow:hidden}
+.media .img {float:left}
+    </style>
+
+    <p>
+      This example uses `.media` for position and point.css for widths and sizes.
+    </p>
+
+    <div class="media attribution p-2" style="border: 1px solid black; border-radius: 4px">
+      <a href="http://twitter.com/stubbornella" class="img mr-1">
+        <svg viewBox="0 0 100 100" class="s-3" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"/></svg>
+      </a>
+
+      <div class="bd">
+        <h4 class="m-0 my-1">Chantastic</h4>
+        <p>Some jabbering on about the most pendantic nonsense you've ever heard.</p>
+
+        <div style="float:left">
+          <div class="mr-1" style="float:left">
+            <svg class="s-2" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"/></svg>
+          </div>
+          <div class="mr-1" style="float:left">
+            <svg class="s-2" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"/></svg>
+          </div>
+          <div class="mr-1" style="float:left">
+            <svg class="s-2" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"/></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p><em>Open this in your inspector.</em></p>
+  </section>
+
+  <section id="stats">
+    <h2 class="fw-800">Stats</h2>
+
+    <p>105 selectors, 611B gzipped, unlimited possibilites.</p>
+  </section>
+
+  <section id="implementation">
+    <h2 class="fw-800">Implementation</h2>
+
+    <ul>
+      <li>.5rem as the smallest unit of measurement.</li>
+      <li>Modular scale: 1x, 2x, 4x, 8x</li>
+      <li><a href="minions.css" target="_blank"/>minions.css</a> style class names.</li>
+    </ul>
+
+    If don't like the class names, use <a href="http://jxnblk.com/gravitons/" target="_blank">Gravitons</a>.
+  </section>
+
+
+  <section class="Usage">
+    <h2 class="fw-800">Usage</h2>
+
+    <h3 class="fw-800">margin</h3>
+
+    <div class="gc-margin demo margin-demo"><div class="m-1">m-1</div></div><br />
+    <div class="gc-margin demo margin-demo"><div class="mx-1">mx-1</div></div><br />
+    <div class="gc-margin demo margin-demo"><div class="my-1">my-1</div></div><br />
+    <div class="gc-margin demo margin-demo"><div class="mt-1">mt-1</div></div><br />
+    <div class="gc-margin demo margin-demo"><div class="mr-1">mr-1</div></div><br />
+    <div class="gc-margin demo margin-demo"><div class="mb-1">mb-1</div></div><br />
+    <div class="gc-margin demo margin-demo"><div class="ml-1">ml-1</div></div><br />
+
+    <h3 class="fw-900">Padding</h3>
+
+    <div class="p-1 padding-demo"><div>p-1</div></div><br />
+    <div class="pt-1 padding-demo"><div>pt-1</div></div><br />
+    <div class="pr-1 padding-demo"><div>pr-1</div></div><br />
+    <div class="pb-1 padding-demo"><div>pb-1</div></div><br />
+    <div class="pl-1 padding-demo"><div>pl-1</div></div><br />
+    <div class="px-1 padding-demo"><div>px-1</div></div><br />
+    <div class="py-1 padding-demo"><div>py-1</div></div><br />
+
+    <h3>TRBL</h3>
+
+    <div style="background-color:red">
+      <div class="t-1" style="position: relative; background-color: white; border: 1px dashed black; box-shadow: 0 4px 8px -2px rgba(0,0,0,0.4)">t-1</div>
+    </div>
+    <br />
+    <br />
+
+    <div style="background-color:red">
+      <div class="r-1" style="position: relative; background-color: white; border: 1px dashed black; box-shadow: 0 4px 8px -2px rgba(0,0,0,0.4)">r-1</div>
+    </div>
+    <br />
+    <br />
+
+    <div style="background-color:red">
+      <div class="b-1" style="position: relative; background-color: white; border: 1px dashed black; box-shadow: 0 4px 8px -2px rgba(0,0,0,0.4)">b-1</div>
+    </div>
+    <br />
+    <br />
+
+    <div style="background-color:red">
+      <div class="l-1" style="position: relative; background-color: white; border: 1px dashed black; box-shadow: 0 4px 8px -2px rgba(0,0,0,0.4)">l-1</div>
+    </div>
+    <br />
+    <br />
+
+    <h3 class="fw-900">size</h3>
+
+    <table>
+      <thead>
+        <tr>
+          <th>s-1</th>
+          <th>s-2</th>
+          <th>s-3</th>
+          <th>s-4</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div class="s-1" style="background-color: black"></div>
+          </td>
+          <td>
+            <div class="s-2" style="background-color: black"></div>
+          </td>
+          <td>
+            <div class="s-3" style="background-color: black"></div>
+          </td>
+          <td>
+            <div class="s-4" style="background-color: black"></div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="code">
+    <h2 class="fw-800">Code</h2>
+    <pre><code>
+/*! point.css */
+.m-0{margin:0}
+.m-1{margin:.5rem}
+.m-2{margin:1rem}
+.m-3{margin:2rem}
+.m-4{margin:4rem}
+.my-0{margin-top:0;margin-bottom:0}
+.my-1{margin-top:.5rem;margin-bottom:.5rem}
+.my-2{margin-top:1rem;margin-bottom:1rem}
+.my-3{margin-top:2rem;margin-bottom:2rem}
+.my-4{margin-top:4rem;margin-bottom:4rem}
+.mx-0{margin-right:0;margin-left:0}
+.mx-1{margin-right:.5rem;margin-left:.5rem}
+.mx-2{margin-right:1rem;margin-left:1rem}
+.mx-3{margin-right:2rem;margin-left:2rem}
+.mx-4{margin-right:4rem;margin-left:4rem}
+.mt-0{margin-top:0}
+.mt-1{margin-top:.5rem}
+.mt-2{margin-top:1rem}
+.mt-3{margin-top:2rem}
+.mt-4{margin-top:4rem}
+.mr-0{margin-right:0}
+.mr-1{margin-right:.5rem}
+.mr-2{margin-right:1rem}
+.mr-3{margin-right:2rem}
+.mr-4{margin-right:4rem}
+.mb-0{margin-bottom:0}
+.mb-1{margin-bottom:.5rem}
+.mb-2{margin-bottom:1rem}
+.mb-3{margin-bottom:2rem}
+.mb-4{margin-bottom:4rem}
+.ml-0{margin-left:0}
+.ml-1{margin-left:.5rem}
+.ml-2{margin-left:1rem}
+.ml-3{margin-left:2rem}
+.ml-4{margin-left:4rem}
+.p-0{padding:0}
+.p-1{padding:.5rem}
+.p-2{padding:1rem}
+.p-3{padding:2rem}
+.p-4{padding:4rem}
+.py-0{padding-top:0;padding-bottom:0}
+.py-1{padding-top:.5rem;padding-bottom:.5rem}
+.py-2{padding-top:1rem;padding-bottom:1rem}
+.py-3{padding-top:2rem;padding-bottom:2rem}
+.py-4{padding-top:4rem;padding-bottom:4rem}
+.px-0{padding-right:0;padding-left:0}
+.px-1{padding-right:.5rem;padding-left:.5rem}
+.px-2{padding-right:1rem;padding-left:1rem}
+.px-3{padding-right:2rem;padding-left:2rem}
+.px-4{padding-right:4rem;padding-left:4rem}
+.pt-0{padding-top:0}
+.pt-1{padding-top:.5rem}
+.pt-2{padding-top:1rem}
+.pt-3{padding-top:2rem}
+.pt-4{padding-top:4rem}
+.pr-0{padding-right:0}
+.pr-1{padding-right:.5rem}
+.pr-2{padding-right:1rem}
+.pr-3{padding-right:2rem}
+.pr-4{padding-right:4rem}
+.pb-0{padding-bottom:0}
+.pb-1{padding-bottom:.5rem}
+.pb-2{padding-bottom:1rem}
+.pb-3{padding-bottom:2rem}
+.pb-4{padding-bottom:4rem}
+.pl-0{padding-left:0}
+.pl-1{padding-left:.5rem}
+.pl-2{padding-left:1rem}
+.pl-3{padding-left:2rem}
+.pl-4{padding-left:4rem}
+.t-0{top:0}
+.t-1{top:.5rem}
+.t-2{top:1rem}
+.t-3{top:2rem}
+.t-4{top:4rem}
+.r-0{right:0}
+.r-1{right:.5rem}
+.r-2{right:1rem}
+.r-3{right:2rem}
+.r-4{right:4rem}
+.b-0{bottom:0}
+.b-1{bottom:.5rem}
+.b-2{bottom:1rem}
+.b-3{bottom:2rem}
+.b-4{bottom:4rem}
+.l-0{left:0}
+.l-1{left:.5rem}
+.l-2{left:1rem}
+.l-3{left:2rem}
+.l-4{left:4rem}
+.w-0{width:0}
+.w-1{width:.5rem}
+.w-2{width:1rem}
+.w-3{width:2rem}
+.w-4{width:4rem}
+.h-0{height:0}
+.h-1{height:.5rem}
+.h-2{height:1rem}
+.h-3{height:2rem}
+.h-4{height:4rem}
+.s-0{height:0}
+.s-1{width:.5rem;height:.5rem}
+.s-2{width:1rem;height:1rem}
+.s-3{width:2rem;height:2rem}
+.s-4{width:4rem;height:4rem}
+    </code></pre>
+  </section>
+
+  <section id="install">
+    <h2 class="fw-800">Install</h2>
+    <code>npm install point.css</code>
+    <p>or in-browser</p>
+    <code>&lt;link rel="stylesheet" href="https://unpkg.com/point.css@1.0.0-pre" /&gt;</code>
+  </section>
+
+  <section id="alternatives">
+    <h2 class="fw-900">Alternatives</h2>
+
+    <p>If you work in an application where <code>rem</code> has been fiddled with, use one of these alternatives that fixed with pixels.</p>
+
+    <ul>
+      <li><a href="https://github.com/chantastic/point.css/blob/master/7-point.css">7-point (pixel)</a></li>
+      <li><a href="https://github.com/chantastic/point.css/blob/master/8-point.css">8-point (pixel)</a></li>
+      <li><a href="https://github.com/chantastic/point.css/blob/master/10-point.css">10-point (pixel)</a></li>
+    </ul>
+  </section>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-46843279-3', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+</body>
+</html>
