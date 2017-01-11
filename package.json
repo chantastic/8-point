@@ -1,5 +1,20 @@
 {
-  "devDependencies": {
-    "lerna": "2.0.0-beta.30"
-  }
+  "name": "8-point",
+  "version": "1.0.0",
+  "description": "8-point soft-grid classes.",
+  "main": "8-point.css",
+  "style": "8-point.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chantastic/8-point.git"
+  },
+  "author": "Michael Chan (chantastic)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chantastic/8-point/issues"
+  },
+  "homepage": "https://github.com/chantastic/8-point#readme"
 }
