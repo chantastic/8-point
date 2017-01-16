@@ -1,5 +1,5 @@
 /*! 8-point */
-@media(min-width:1200px){
+@media screen and (min-width:1200px){
 .m-0\@xl{margin:0}
 .m-1\@xl{margin:8px}
 .m-2\@xl{margin:16px}
