@@ -70,6 +70,8 @@ r = right
 b = bottom
 l = left
 
+lh = line-height
+
 w = width
 h = height
 

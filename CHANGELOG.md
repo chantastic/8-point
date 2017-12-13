@@ -1,3 +1,6 @@
+## 1.2
+* add `line-height`
+
 ## 1.1
 
 * CHORE: rename `!` and `child-combinator` files for easier project navigation.
