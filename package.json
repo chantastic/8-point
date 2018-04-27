@@ -1,6 +1,6 @@
 {
   "name": "8-point",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "8-point soft-grid classes.",
   "main": "8-point.css",
   "style": "8-point.css",
